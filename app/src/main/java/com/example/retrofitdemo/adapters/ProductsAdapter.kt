@@ -34,6 +34,6 @@ class ProductsAdapter(private val mlist:List<Product>):
         val products=mlist[position]
         holder.productButton.text=products.price.toString()
         holder.productTextView.text=products.description
-        Picasso.get().load( "http://188.234.244.32:8090/images/product/"+products.image).into(holder.productImage)
+        Picasso.get().load( "http://172.30.44.151:8090/images/product/"+products.image).into(holder.productImage)
     }
 }
